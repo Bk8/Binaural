@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="uiQHln" name="Binaural" projectType="guiapp" version="1.0.0"
+              bundleIdentifier="com.yourcompany.Binaural" includeBinaryInAppConfig="1"
+              jucerVersion="4.2.3">
+  <MAINGROUP id="eu0fT0" name="Binaural">
+    <GROUP id="{8E3B935F-537D-F6FA-DFDA-80D58B3E42F4}" name="Source">
+      <GROUP id="{353CB314-8075-EC1A-D8C0-EB98384EA18A}" name="FFTConvolver">
+        <FILE id="Np96cy" name="AudioFFT.cpp" compile="1" resource="0" file="Source/FFTConvolver/AudioFFT.cpp"/>
+        <FILE id="FzMBzD" name="AudioFFT.h" compile="0" resource="0" file="Source/FFTConvolver/AudioFFT.h"/>
+        <FILE id="naB05h" name="FFTConvolver.cpp" compile="1" resource="0"
+              file="Source/FFTConvolver/FFTConvolver.cpp"/>
+        <FILE id="RP6QRA" name="FFTConvolver.h" compile="0" resource="0" file="Source/FFTConvolver/FFTConvolver.h"/>
+        <FILE id="QLFU4G" name="Utilities.cpp" compile="1" resource="0" file="Source/FFTConvolver/Utilities.cpp"/>
+        <FILE id="qZn4c8" name="Utilities.h" compile="0" resource="0" file="Source/FFTConvolver/Utilities.h"/>
+      </GROUP>
+      <FILE id="XNeywl" name="BinauralAudioPlayer.cpp" compile="1" resource="0"
+            file="Source/BinauralAudioPlayer.cpp"/>
+      <FILE id="s9lKW5" name="BinauralAudioPlayer.h" compile="0" resource="0"
+            file="Source/BinauralAudioPlayer.h"/>
+      <FILE id="zJtAUQ" name="HRIR.cpp" compile="1" resource="0" file="Source/HRIR.cpp"/>
+      <FILE id="BiDA0o" name="HRIR.h" compile="0" resource="0" file="Source/HRIR.h"/>
+      <GROUP id="{4404702F-8C2B-930A-AD30-4C47F79411CB}" name="mit-hrtf-lib">
+        <GROUP id="{4D06823B-E2FF-4FF9-BBDE-E57FE3110A6B}" name="source">
+          <GROUP id="{14246A30-E937-D2CC-B069-0E4796AEFB13}" name="diffuse">
+            <FILE id="ychMBb" name="mit_hrtf_diffuse_44100.h" compile="0" resource="0"
+                  file="Source/mit-hrtf-lib/source/diffuse/mit_hrtf_diffuse_44100.h"/>
+            <FILE id="eLG6zY" name="mit_hrtf_diffuse_48000.h" compile="0" resource="0"
+                  file="Source/mit-hrtf-lib/source/diffuse/mit_hrtf_diffuse_48000.h"/>
+            <FILE id="kHOukQ" name="mit_hrtf_diffuse_88200.h" compile="0" resource="0"
+                  file="Source/mit-hrtf-lib/source/diffuse/mit_hrtf_diffuse_88200.h"/>
+            <FILE id="kw36Ac" name="mit_hrtf_diffuse_96000.h" compile="0" resource="0"
+                  file="Source/mit-hrtf-lib/source/diffuse/mit_hrtf_diffuse_96000.h"/>
+          </GROUP>
+          <GROUP id="{CFAF1A63-EB12-0C69-233C-247ED01ECDFA}" name="normal">
+            <FILE id="iMj7CM" name="mit_hrtf_normal_44100.h" compile="0" resource="0"
+                  file="Source/mit-hrtf-lib/source/normal/mit_hrtf_normal_44100.h"/>
+            <FILE id="ErfiP5" name="mit_hrtf_normal_48000.h" compile="0" resource="0"
+                  file="Source/mit-hrtf-lib/source/normal/mit_hrtf_normal_48000.h"/>
+            <FILE id="Tz460C" name="mit_hrtf_normal_88200.h" compile="0" resource="0"
+                  file="Source/mit-hrtf-lib/source/normal/mit_hrtf_normal_88200.h"/>
+            <FILE id="U5fI2T" name="mit_hrtf_normal_96000.h" compile="0" resource="0"
+                  file="Source/mit-hrtf-lib/source/normal/mit_hrtf_normal_96000.h"/>
+          </GROUP>
+          <FILE id="drjllr" name="mit_hrtf_filter.h" compile="0" resource="0"
+                file="Source/mit-hrtf-lib/source/mit_hrtf_filter.h"/>
+          <FILE id="Q9uP8V" name="mit_hrtf_lib.c" compile="1" resource="0" file="Source/mit-hrtf-lib/source/mit_hrtf_lib.c"/>
+        </GROUP>
+        <FILE id="aMCjCL" name="mit_hrtf_lib.h" compile="0" resource="0" file="Source/mit-hrtf-lib/mit_hrtf_lib.h"/>
+      </GROUP>
+      <FILE id="BXGjzp" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="lwzTAx" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="l0whN8" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="Binaural"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="Binaural"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../modules"/>
+        <MODULEPATH id="juce_events" path="../../modules"/>
+        <MODULEPATH id="juce_graphics" path="../../modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../modules"/>
+        <MODULEPATH id="juce_video" path="../../modules"/>
+        <MODULEPATH id="juce_opengl" path="../../modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
